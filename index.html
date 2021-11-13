@@ -10,14 +10,22 @@
     <h1 id="title">How well do you know Albania?</h1>
     <p id="description">Tell us your story visiting this beautiful place</p>
     <form id="survey-form" action="">
-        <label for="name">Name:</label><br>
-        <input id="name"type="text" required><br>
+        <label id="name-label" for="name">Name:</label><br>
+        <input id="name"type="text" placeholder="Enter your name" required><br>
 
-        <label for="email">Email:</label><br>
-        <input id="email" type="email" required><br>
+        <label id="emai-label" for="email">Email:</label><br>
+        <input id="email" type="email" placeholder="Example:email@gmail.com" required><br>
 
-        <label for="">Age (Optional)</label><br>
-        <input id="number" type="number" min="18"><br>
+        <label id="number-label" for="number">Age (Optional)</label><br>
+        <input id="number" type="number" min="18" max="100" placeholder="example:18-100"><br>
+
+        <label for="dropdown">Which city would you like to visit ?</label><br>
+            <select name="dropdown" id="dropdown">
+                <option value="Saranda">Saranda</option>
+                <option value="Vlora">Vlora</option>
+                <option value="Durres">Durres</option>
+                <option value="Tirana">Tirana</option>
+            </select>
 
     </form>
 </body>
