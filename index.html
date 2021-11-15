@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Survey-Form</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
     <h1 id="title">How well do you know Albania?</h1>
@@ -28,14 +30,17 @@
             </select><br>
         
         <label for="visiting">Are you visiting soon?</label><br>
+        <div class="radio">
             <input type="radio" id="maybe" name="Albania">
             <label for="maybe">Maybe</label><br>
             <input type="radio" id="definitely" name="Albania">
             <label for="Definitely">Definitely</label><br>
             <input type="radio" id="not-sure" name="Albania">
             <label for="not-sure">Not Sure</label><br>
+        </div> 
 
         <label for="">What would you love to do during your visit?</label><br>
+        <div class="checkbox">
             <input type="checkbox" id="musuem" value="visit-musuem">
             <label for="musuem">Visit Musuem</label><br>
             <input type="checkbox" id="beach" value="visit-beach">
@@ -44,12 +49,13 @@
             <label for="mountain">Visit Mountain</label><br>
             <input type="checkbox" id="capital" value="visit-capital">
             <label for="capital">Visit Capital City</label><br>
-
+          </div> 
         <label for="comments">Any additional comments</label><br>
             <textarea name="additional-comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea><br>
         
         <input id="submit" type="submit" value="Submit">
         
     </form>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1535095.5489418895!2d20.020931589978687!3d41.28202247871687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13453bf3bd274c2d%3A0x77ce589d6983bee!2sAlbania!5e0!3m2!1sen!2s!4v1636972671646!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </body>
 </html>
